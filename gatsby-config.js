@@ -19,26 +19,26 @@ module.exports = {
     }
   },
   plugins: [
-    {
-      resolve: 'levu48-source-newsapi',
-      options: {
-        pages: [
-          {
-            title: 'Headlines News',
-            slug: 'headline-news',
-            url: 'https://newsapi.org/v2/top-headlines'
-                    + '?apiKey=ca8f478ba3af4300ab29be359e0efc2f'
-                    + '&country=us'
-          }, {
-            title: 'South China Sea',
-            slug: 'south-china-sea',
-            url: 'https://newsapi.org/v2/everything'
-                    + '?apiKey=ca8f478ba3af4300ab29be359e0efc2f'
-                    + '&q=South%20China%20Sea'
-          }
-        ]
-      }
-    },
+    // {
+    //   resolve: 'levu48-source-newsapi',
+    //   options: {
+    //     pages: [
+    //       {
+    //         title: 'Headlines News',
+    //         slug: 'headline-news',
+    //         url: 'https://newsapi.org/v2/top-headlines'
+    //                 + '?apiKey=ca8f478ba3af4300ab29be359e0efc2f'
+    //                 + '&country=us'
+    //       }, {
+    //         title: 'South China Sea',
+    //         slug: 'south-china-sea',
+    //         url: 'https://newsapi.org/v2/everything'
+    //                 + '?apiKey=ca8f478ba3af4300ab29be359e0efc2f'
+    //                 + '&q=South%20China%20Sea'
+    //       }
+    //     ]
+    //   }
+    // },
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sass",
     // {

@@ -17,18 +17,6 @@ function GetNavList(config) {
       to: "/headlines"
     },
     {
-      primaryText: "React-MD grid",
-      leftIcon: <FontIcon>rss_feed</FontIcon>,
-      component: Link,
-      to: "/grid"
-    },
-    {
-      primaryText: "Material-UI grid",
-      leftIcon: <FontIcon>rss_feed</FontIcon>,
-      component: Link,
-      to: "/grid2"
-    },
-    {
       divider: true
     }
   ];
