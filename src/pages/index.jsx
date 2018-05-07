@@ -39,7 +39,7 @@
 //     }
 // }
 
-import Headlines, {HeadlinesQuery} from './Headlines';
+import Headlines, {HeadlinesQuery} from './headlines';
 
 const Home = Headlines;
 export default Home;
