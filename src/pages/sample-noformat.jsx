@@ -23,8 +23,8 @@ class HeadlinesPage extends Component {
 
 export default HeadlinesPage;
 
-export const HeadlinesQuery = graphql`
-  query HeadlinesQuery {
+export const HeadlinesQuery2 = graphql`
+  query HeadlinesQuery2 {
     allNewsFeedItem {
       edges {
         node {

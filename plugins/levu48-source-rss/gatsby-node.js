@@ -29,7 +29,9 @@ const createChildren = (entries, parentId, createNode) => {
 
 const sourceNodes = async ({boundActionCreators}) => {
     const {createNode} = boundActionCreators;
-
+    
+    //const url = 'https://api.newsapi.aylien.com/api/v1/stories?text=viet&published_at.start=NOW-29DAYS%2FDAY&published_at.end=NOW&categories.id%5B%5D=IAB20&categories.taxonomy=iab-qag&language=en&sort_by=recency'
+    
     const url = 'https://newsapi.org/v2/top-headlines'
             + '?apiKey=ca8f478ba3af4300ab29be359e0efc2f'
             + '&country=us';

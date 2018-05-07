@@ -17,6 +17,12 @@ function GetNavList(config) {
       to: "/headlines"
     },
     {
+      primaryText: "Blogs",
+      leftIcon: <FontIcon>speaker_notes</FontIcon>,
+      component: Link,
+      to: "/blogs"
+    },
+    {
       divider: true
     }
   ];

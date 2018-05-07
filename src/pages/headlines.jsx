@@ -31,7 +31,7 @@ const styles = {
 /**
  * A simple example of a scrollable `GridList` containing a [Subheader](/#/components/subheader).
  */
-class GridListExampleSimple extends React.Component {
+class Headlines extends React.Component {
     // componentWillMount() {
     //     this.props.data.allNewsFeedItem.edgeds.forEach(async ({node}) => {
     //         node.title = translate.getText(node.title, {to: 'vi-VN'});
@@ -51,10 +51,10 @@ class GridListExampleSimple extends React.Component {
     }
 }
 
-export default GridListExampleSimple;
+export default Headlines;
 
-export const GridListExampleSimpleQuery = graphql`
-    query GridListExampleSimpleQuery {
+export const HeadlinesQuery = graphql`
+    query HeadlinesQuery {
         allNewsFeedItem {
             edges {
                 node {
