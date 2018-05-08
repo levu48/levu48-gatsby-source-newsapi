@@ -34,7 +34,12 @@ const sourceNodes = async ({boundActionCreators}) => {
     
     const url = 'https://newsapi.org/v2/top-headlines'
             + '?apiKey=ca8f478ba3af4300ab29be359e0efc2f'
-            + '&country=us';
+            + '&country=us'
+            + '&pageSize=30';
+    
+    const url2 = 'https://newsapi.org/v2/everything?q=south%20china%20sea&sortBy=publishedAt&apiKey=ca8f478ba3af4300ab29be359e0efc2f&pageSize=10'
+
+    const url3 = 'https://newsapi.org/v2/everything?q=vietnam&sortBy=publishedAt&apiKey=ca8f478ba3af4300ab29be359e0efc2f&language=en&pageSize=30'
 
     // const url = 'https://newsapi.org/v2/everything'
     //         + '?q=bitcoin'
@@ -45,21 +50,26 @@ const sourceNodes = async ({boundActionCreators}) => {
     // + '&country=cn';
            
     const data = await fetch(url).then(response => response.json());
+    const data2 = await fetch(url2).then(response => response.json());
+    const data3 = await fetch(url3).then(response => response.json());
 
-    if (!data) {
+    if (!data && !data2 && !data3) {
         return;
     }
 
-    //console.log('>>> DATA', data);
+    console.log('>>> DATA3', data3);
 
-    const childrenIds = createChildren(data.articles, url, createNode);
+    const childrenIds = data ? createChildren(data.articles, url, createNode) : [];
+    const childrenIds2 = data2 ? createChildren(data2.articles, url2, createNode) : [];
+    const childrenIds3 = data3 ? createChildren(data3.articles, url3, createNode) : [];
+
     let feedStory = {
         id: url,
         title: 'Headline News, US',
         description: 'Top Headline News Today',
         link: url,
         parent: null,
-        children: childrenIds
+        children: childrenIds.concat(childrenIds2).concat(childrenIds3)
     }
 
     feedStory.internal = {

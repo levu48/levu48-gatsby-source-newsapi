@@ -34,6 +34,11 @@ module.exports = {
       label: "Email",
       url: "mailto:levu48@gmail.com",
       iconClassName: "fa fa-envelope"
+    },
+    {
+      label: 'User',
+      url: '/user',
+      iconClassName: 'fa fa-user'
     }
   ],
   copyright: "Copyright © 2018. VietNewsNet" // Copyright string for the footer of the website and RSS feed.
