@@ -17,6 +17,12 @@ function GetNavList(config) {
       to: "/headlines"
     },
     {
+      primaryText: "Vietnam News",
+      leftIcon: <FontIcon>rss_feed</FontIcon>,
+      component: Link,
+      to: "/vietnam"
+    },
+    {
       primaryText: "Blogs",
       leftIcon: <FontIcon>speaker_notes</FontIcon>,
       component: Link,

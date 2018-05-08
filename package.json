@@ -41,6 +41,7 @@
     "react-md": "^1.2.9",
     "react-share": "^2.1.0",
     "react-twitter-widgets": "^1.7.1",
+    "rss-parser": "^3.1.2",
     "tough-cookie": "^2.3.4",
     "translate-api": "^0.3.12"
   },
