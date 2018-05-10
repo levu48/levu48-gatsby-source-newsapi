@@ -28,6 +28,7 @@
     "gatsby-remark-prismjs": "^1.2.11",
     "gatsby-remark-responsive-iframe": "^1.4.16",
     "gatsby-source-filesystem": "^1.5.11",
+    "gatsby-source-newsapi": "git+https://git@github.com/levu48/gatsby-source-newsapi.git",
     "gatsby-source-rss": "^1.0.0",
     "gatsby-transformer-remark": "^1.7.26",
     "lodash": "^4.17.4",

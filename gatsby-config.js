@@ -53,12 +53,13 @@ module.exports = {
         rssURL: 'http://rss.cnn.com/rss/cnn_topstories.rss'
       }
     },
-    {
-      resolve: 'levu48-source-rss',
-      options: {
-        rssURL: 'http://rss.cnn.com/rss/cnn_topstories.rss'
-      }
-    },
+    "gatsby-source-newsapi",
+    // {
+    //   resolve: 'levu48-source-rss',
+    //   options: {
+    //     rssURL: 'http://rss.cnn.com/rss/cnn_topstories.rss'
+    //   }
+    // },
     {
       resolve: "gatsby-source-filesystem",
       options: {
