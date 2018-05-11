@@ -61,7 +61,8 @@ export const HeadlinesQuery = graphql`
                     id
                     title
                     description
-                    link
+                    link    
+                    url
                     urlToImage
                 }
             }

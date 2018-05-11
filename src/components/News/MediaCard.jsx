@@ -37,7 +37,7 @@ function SimpleMediaCard(props) {
           <Button size="small" color="primary">
             Share
           </Button>
-          <Button href={article.link} size="small" color="primary">
+          <Button href={article.url} size="small" color="primary">
             Learn More
           </Button>
         </CardActions>
