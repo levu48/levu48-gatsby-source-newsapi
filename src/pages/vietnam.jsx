@@ -24,18 +24,20 @@ const styles = {
 };
 
 class VietnamNews extends React.Component {
-    render() {}
-
-    render2() {
-        const tilesData = this.props.data.allRssFeedItem.edges;
-        return (
-            <div style={styles.root}>
-                {tilesData.map(({node}) => (
-                    <span style={styles.item}><RssCard article={node} /></span>
-                ))}
-            </div>
-        );
+    render() {
+        return <h2>Vietnam News</h2>;
     }
+
+    // render2() {
+    //     const tilesData = this.props.data.allRssFeedItem.edges;
+    //     return (
+    //         <div style={styles.root}>
+    //             {tilesData.map(({node}) => (
+    //                 <span style={styles.item}><RssCard article={node} /></span>
+    //             ))}
+    //         </div>
+    //     );
+    // }
 }
 
 export default VietnamNews;
