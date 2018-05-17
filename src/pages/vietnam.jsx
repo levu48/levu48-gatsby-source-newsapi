@@ -24,7 +24,9 @@ const styles = {
 };
 
 class VietnamNews extends React.Component {
-    render() {
+    render() {}
+
+    render2() {
         const tilesData = this.props.data.allRssFeedItem.edges;
         return (
             <div style={styles.root}>
@@ -38,17 +40,17 @@ class VietnamNews extends React.Component {
 
 export default VietnamNews;
 
-export const VietnamNewsQuery = graphql`
-    query VietnamNewsQuery {
-        allRssFeedItem {
-            edges {
-                node {
-                    id
-                    title
-                    description
-                    link
-                }
-            }
-        }
-    }
-`;
+// export const VietnamNewsQuery = graphql`
+//     query VietnamNewsQuery {
+//         allRssFeedItem {
+//             edges {
+//                 node {
+//                     id
+//                     title
+//                     description
+//                     link
+//                 }
+//             }
+//         }
+//     }
+// `;
