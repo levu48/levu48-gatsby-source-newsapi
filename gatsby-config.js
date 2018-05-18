@@ -55,7 +55,27 @@ module.exports = {
     //   }
     // },
     
-    "gatsby-source-newsapi",
+    //"gatsby-source-newsapi",
+
+    {
+      resolve: 'gatsby-source-newsapi',
+      options: {
+        sources: [
+          {
+              url: 'https://newsapi.org/v2/top-headlines?apiKey=ca8f478ba3af4300ab29be359e0efc2f&country=us&pageSize=30',
+              type: 'json'
+          }, {
+              url: 'https://newsapi.org/v2/everything?q=south%20china%20sea&sortBy=publishedAt&apiKey=ca8f478ba3af4300ab29be359e0efc2f&pageSize=10',
+              type: 'json'
+          }, {
+              url: 'https://newsapi.org/v2/everything?q=vietnam&sortBy=publishedAt&apiKey=ca8f478ba3af4300ab29be359e0efc2f&language=en&pageSize=30',
+              type: 'json'
+          }
+        ]
+      }
+    },
+
+
     // {
     //   resolve: 'levu48-source-rss',
     //   options: {
